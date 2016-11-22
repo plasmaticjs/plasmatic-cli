@@ -1,0 +1,45 @@
+{
+  "name": "plasmatic-cli",
+  "version": "0.0.4",
+  "description": "Plasmatic CLI",
+  "bin": {
+    "plasmatic": "./bin/index.js"
+  },
+  "scripts": {
+    "prepublish": "make build",
+    "postinstall": "make build"
+  },
+  "author": "Milos Mosovsky <milos.mosovsky@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-glob-imports": "^1.0.0-beta.1",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-es2017": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "chalk": "^1.1.3",
+    "ejs": "^2.5.2",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb-base": "^10.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "figlet": "^1.2.0",
+    "fs": "0.0.1-security",
+    "inquirer": "^1.2.3",
+    "minimist": "^1.2.0",
+    "ora": "^0.3.0",
+    "path": "^0.12.7",
+    "prompt": "^1.0.0",
+    "update-notifier": "^1.0.2"
+  },
+  "importSort": {
+    ".js, .jsx": {
+      "parser": "babylon",
+      "style": "module"
+    }
+  }
+}
